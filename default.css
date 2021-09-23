@@ -2,4 +2,44 @@ body
 {
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	font-size: 12pt;
+	margin: 24px;
+}
+
+div.context
+{
+	display: inline-block;
+	width: 475px;
+	border: 1px solid #808080;
+	border-radius: 8px;
+	padding: 24px;
+}
+
+div.status, div.usermanual
+{
+	display: inline-block;
+	border: 1px solid #808080;
+	border-radius: 8px;
+	padding: 24px;
+	margin-bottom: 12px;
+}
+
+td
+{
+	vertical-align: top;
+}
+
+textarea
+{
+	width: 100%;
+	margin-bottom: 12px;
+}
+
+table.lines
+{
+	margin-bottom: 16px;
+}
+
+table.lines tr
+{
+	border-bottom: 1px solid #808080;
 }
