@@ -58,6 +58,12 @@
 				</td>
 			</tr>
 			<tr>
+				<td>Subject:</td>
+				<td><input id="txtSubjectBug" type="text" 
+					placeholder="Brief summary (32)" maxlength="32" 
+					class="form-control" style="margin-top:8px;margin-bottom:8px" /></td>
+			</tr>
+			<tr>
 				<td colspan="2">Description of issue:</td>
 			</tr>
 			<tr>
@@ -86,6 +92,12 @@
 						<option value="UserManualPanel">User Manual</option>
 					</select>
 				</td>
+			</tr>
+			<tr>
+				<td>Subject:</td>
+				<td><input id="txtSubjectFeature" type="text" 
+					placeholder="Brief summary (32)" maxlength="32" 
+					class="form-control" style="margin-top:8px;margin-bottom:8px" /></td>
 			</tr>
 			<tr>
 				<td colspan="2">Description of request:</td>
@@ -214,6 +226,8 @@
 		</div>
 
 <script type="text/javascript">
+var urlDebug = "https://localhost:5001/api/PostRequest";
+var urlProduction = "https://www.ascendantdesign.net/api/PostRequest";
 $(document).ready(function()
 {
 	$("#btnSubmitBug").click(function()
@@ -222,14 +236,16 @@ $(document).ready(function()
 		var json = "";
 		console.log("Submitting bug report...");
 
+		info["Product"] = "Ambassador-64";
 		info["RequestType"] = "BugReport";
 		info["Section"] = $("#cmboSectionBug").val();
+		info["Subject"] = $("#txtSubjectBug").val();
 		info["Description"] = $("#txtDescriptionBug").val();
 		json = JSON.stringify(info);
 		console.log("Preparing to send " + json);
 		jQuery.ajax(
 		{
-			url: "https://www.ascendantdesign.net/api/PostRequest",
+			url: urlProduction,
 			type: "POST",
 			data: json,
 			dataType: "json",
@@ -247,14 +263,16 @@ $(document).ready(function()
 		var json = "";
 		console.log("Submitting feature request...");
 
+		info["Product"] = "Ambassador-64";
 		info["RequestType"] = "FeatureRequest";
 		info["Section"] = $("#cmboSectionFeature").val();
+		info["Subject"] = $("#txtSubjectFeature").val();
 		info["Description"] = $("#txtDescriptionFeature").val();
 		json = JSON.stringify(info);
 		console.log(`Preparing to send ${json}`);
 		jQuery.ajax(
 		{
-			url: "https://www.ascendantdesign.net/api/PostRequest",
+			url: urlProduction,
 			type: "POST",
 			data: json,
 			dataType: "json",
