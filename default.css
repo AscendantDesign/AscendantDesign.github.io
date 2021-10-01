@@ -43,3 +43,75 @@ table.lines tr
 {
 	border-bottom: 1px solid #808080;
 }
+
+.learnMoreButton
+{
+	border: 0;
+	padding: 0;
+	margin: 0;
+	width: 86px;
+	height: 32px;
+	background-color: white;
+	background-image: url(images/buttonStripLearnMore.png);
+	background-position-y: 0px;
+}
+.learnMoreButton:hover
+{
+	background-position-y: -32px;
+}
+.learnMoreButton:active
+{
+	background-position-y: -64px;
+}
+.learnMoreButton:visited
+{
+	background-position-y: -96px;
+}
+
+.submitButton
+{
+	border: 0;
+	padding: 0;
+	margin: 0;
+	width: 86px;
+	height: 33px;
+	background-color: white;
+	background-image: url(images/buttonStripSubmit.png);
+	background-position-y: 0px;
+}
+.submitButton:hover
+{
+	background-position-y: -33px;
+}
+.submitButton:active
+{
+	background-position-y: -66px;
+}
+.submitButton:visited
+{
+	background-position-y: -99px;
+}
+
+#btnDownloadInstructions
+{
+	border: 0;
+	padding: 0;
+	margin: 0;
+	width: 255px;
+	height: 48px;
+	background-color: white;
+	background-image: url(images/buttonstripDownloadInstructions.png);
+	background-position-y: 0px;
+}
+#btnDownloadInstructions:hover
+{
+	background-position-y: -48px;
+}
+#btnDownloadInstructions:active
+{
+	background-position-y: -96px;
+}
+#btnDownloadInstructions:visited
+{
+	background-position-y: -144px;
+}
