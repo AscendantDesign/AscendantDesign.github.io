@@ -40,7 +40,7 @@ var decisiondata =
 	},
 	{
 		"ID": "VerifyWorkingA",
-		"Title": "<div class='section'>Verify OneDrive is Working</div><div>On the taskbar to the left of the clock, do you see the OneDrive icon as illustrated in Figure 1 below?<div class='centered'><img src='Images/Figure1.png' style='width:30vw' /></div></div>",
+		"Title": "<div class='section'>Verify OneDrive is Working</div><div>On the taskbar to the left of the clock, do you see the OneDrive icon as illustrated in Figure 1 below?<div class='centered'><img src='images/Figure1.png' style='width:30vw' /></div></div>",
 		"MoreInfo": "OneDrive is the bridge between your computer and the file repositories stored in SharePoint. To access shared files, OneDrive needs to be on and up to date. The following steps will help you troubleshoot basic issues in OneDrive.",
 		"Track":
 		[
@@ -56,7 +56,7 @@ var decisiondata =
 	},
 	{
 		"ID": "VerifyWorkingB",
-		"Title": "<div class='section'>Verify OneDrive is Working</div><div>Click the <big><b>^</b></big> icon next to the clock to search the hidden icons list for the cloud icon (see Figure 2). Do you see the icon in the hidden icons list?<div class='centered'><img src='Images/Figure2.png' style='width: 30vw' /></div></div>",
+		"Title": "<div class='section'>Verify OneDrive is Working</div><div>Click the <big><b>^</b></big> icon next to the clock to search the hidden icons list for the cloud icon (see Figure 2). Do you see the icon in the hidden icons list?<div class='centered'><img src='images/Figure2.png' style='width: 30vw' /></div></div>",
 		"Track":
 		[
 			{
@@ -71,7 +71,7 @@ var decisiondata =
 	},
 	{
 		"ID": "VerifyWorkingC",
-		"Title": "<div class='section'>Verify OneDrive is Working</div><div>Click the cloud icon to bring up a list of recent uploads and downloads from OneDrive. You should see a list of recent items opened by you and your coworkers, as well as the timeframe in which they were downloaded or uploaded. Check the timestamps to make sure the action is current (see Figure 3).<div class='centered'><img src='Images/Figure3.png' style='height:40vh' /></div></div>",
+		"Title": "<div class='section'>Verify OneDrive is Working</div><div>Click the cloud icon to bring up a list of recent uploads and downloads from OneDrive. You should see a list of recent items opened by you and your coworkers, as well as the timeframe in which they were downloaded or uploaded. Check the timestamps to make sure the action is current (see Figure 3).<div class='centered'><img src='images/Figure3.png' style='height:40vh' /></div></div>",
 		"Track":
 		[
 			{
@@ -108,7 +108,7 @@ var decisiondata =
 	},
 	{
 		"ID": "RunOneDriveC",
-		"Title": "<div class='section'>Verify OneDrive is Working</div><div>Are you able to find the cloud icon on the task bar or in the hidden icons menu as shown on figures 1 or 2 below?<div class='centered'><img src='Images/Figure1.png' style='width:20vw' /></div><div class='centered'><img src='Images/Figure2.png' style='width:25vw' /></div></div>",
+		"Title": "<div class='section'>Verify OneDrive is Working</div><div>Are you able to find the cloud icon on the task bar or in the hidden icons menu as shown on figures 1 or 2 below?<div class='centered'><img src='images/Figure1.png' style='width:20vw' /></div><div class='centered'><img src='images/Figure2.png' style='width:25vw' /></div></div>",
 		"Track":
 		[
 			{
@@ -134,7 +134,7 @@ var decisiondata =
 	},
 	{
 		"ID": "InitializeOneDriveB",
-		"Title": "<div class='section'>Initializing OneDrive</div><div>Right-click on the taskbar and select <b>Task Manager</b> from the dialog box as shown in Figure 4.<div class='centered'><img src='Images/Figure4.png' style='height:40vh' /></div></div>",
+		"Title": "<div class='section'>Initializing OneDrive</div><div>Right-click on the taskbar and select <b>Task Manager</b> from the dialog box as shown in Figure 4.<div class='centered'><img src='images/Figure4.png' style='height:40vh' /></div></div>",
 		"Track":
 		[
 			{
@@ -167,7 +167,7 @@ var decisiondata =
 	},
 	{
 		"ID": "InitializeOneDriveE",
-		"Title": "<div class='section'>Initializing OneDrive</div><div>Check to see if the application&apos;s status is <b>Enabled</b>. If not, click the <b>Enable</b> button at the bottom of the window as shown in Figure 5.<div class='centered'><img src='Images/Figure5.png' style='height:40vh' /></div></div>",
+		"Title": "<div class='section'>Initializing OneDrive</div><div>Check to see if the application&apos;s status is <b>Enabled</b>. If not, click the <b>Enable</b> button at the bottom of the window as shown in Figure 5.<div class='centered'><img src='images/Figure5.png' style='height:40vh' /></div></div>",
 		"Track":
 		[
 			{
