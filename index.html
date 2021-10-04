@@ -3,21 +3,262 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
 	<script type="text/javascript" src="scripts/jquery-3.4.1.min.js"></script>
 	<link type="text/css" rel="stylesheet" href="default.css" />
 	<title>Ascendant Design and Training</title>
 </head>
 <body>
 
-	<input id="btnDownloadInstructions" type="button" />
-	<input class="submitButton" id="btnSubmit" type="button" />
-	<input class="learnMoreButton" id="btnLearnMore" type="button" />
+	<div class="header">
+		<div class="containerLogoFull"><img class="adtLogoFull" /></div>
+		<div class="companyNameHead">Ascendant Design and Training, LLC</div>
+		<div class="menuContainer">
+			<div class="menuHead">Home</div>
+			<div class="menuHead"><a href="https://www.ascendantdesign.net/Portfolios" target="_blank">Portfolio</a></div>
+			<div class="menuHead"><a href="https://www.ascendantdesign.net/Index#sectionAbout" target="_blank">About Us</a></div>
+			<div class="menuHead">Our Process</div>
+			<div class="menuHead"><a href="https://www.ascendantdesign.net/Index#sectionContact" target="_blank">Contact</a></div>
+		</div>
+	</div>
+	<div class="ambassadorTitle">Ambassador-64</div>
+	<div class="ambassadorDescription">An enhanced productivity toolkit<br />for Microsoft PowerPoint and Articulate Storyline</div>
+	<div class="decoLine">&nbsp;</div>
+	<div class="sectionIcons">
+		<div class="currentStatus">
+			<img class="currentStatusImage" />
+			<div class="currentStatusTitle">Current status:</div>
+			<div class="currentStatusText">Beta Version 1.0</div>
+		</div>
+		<div class="downloadStatus">
+			<img class="downloadStatusImage" />
+			<div class="downloadStatusTitle">Download for free:</div>
+			<div class="downloadStatusText">Get it directly from our website</div>
+		</div>
+	</div>
+
+	<div class="centerContent">
+		<input id="btnDownloadInstructions" type="button" value="Download Instructions" />
+	</div>
+	<div id="modalDownloadInstructions" class="modal">
+		<div class="modalContent">
+			<span class="modalClose">&times;</span>
+			<div><b>Download instructions:</b></div>
+			<ul>
+				<li>Navigate to <a href="https://www.ascendantdesign.net/store#!/Ambassador-64-Beta-Version-1-0/p/395084132/category=0" target="_blank">the item in our online store</a>.</li>
+				<li>Add the item to your bag.</li>
+				<li>Click <b>Go to Checkout</b>.</li>
+				<li>Enter your email address.</li>
+				<li>Optionally, check <b>Keep me up to date on news and exclusive offers</b>.</li>
+				<li>Click <b>Checkout</b>.</li>
+				<li>The file is immediately available to download.</li>
+				<li>You will receive an order confirmation email from <b>EdTech Products from 
+					Ascendant Design and Training, LLC</b>.</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="purpleArea">
+		<div class="userForm">
+			<div class="userFormHead">
+				<img class="userFormBugImage" />
+				<div class="userFormTitle">Report a Bug</div>
+			</div>
+			<table>
+				<tr>
+					<td>Application area:</td>
+					<td>
+						<select id="cmboSectionBug">
+							<option value="MainPage" selected>Main Page</option>
+							<option value="HomePanel">Home</option>
+							<option value="PowerPointToolsPanel">PowerPoint Tools</option>
+							<option value="StorylineToolsPanel">Storyline Tools</option>
+							<option value="ClosedCaptionsPanel">Closed Captions</option>
+							<option value="MediaProcessingPanel">Media Processing</option>
+							<option value="UserManualPanel">User Manual</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Subject:</td>
+					<td><input id="txtSubjectBug" type="text" 
+						placeholder="Brief summary (32)" maxlength="32" 
+						class="form-control" style="margin-top:8px;margin-bottom:8px" /></td>
+					</tr>
+					<tr>
+						<td colspan="2">Description of issue:</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<textarea id="txtDescriptionBug" cols="40" rows="8" class="form-control"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<input type="button" id="btnSubmitBug" value="Submit" class="submitButton" />
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<div id="msgSubmitBug">Bug report has been submitted.</div>
+						</td>
+					</tr>
+				</table>
+		</div>
+		<div class="userForm">
+			<div class="userFormHead">
+				<img class="userFormFeatureImage" />
+				<div class="userFormTitle">Request a Feature</div>
+			</div>
+			<table>
+				<tr>
+					<td>Application area:</td>
+					<td>
+						<select id="cmboSectionFeature" class="form-select">
+							<option value="MainPage" selected>Main Page</option>
+							<option value="HomePanel">Home</option>
+							<option value="PowerPointToolsPanel">PowerPoint Tools</option>
+							<option value="StorylineToolsPanel">Storyline Tools</option>
+							<option value="ClosedCaptionsPanel">Closed Captions</option>
+							<option value="MediaProcessingPanel">Media Processing</option>
+							<option value="UserManualPanel">User Manual</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Subject:</td>
+					<td><input id="txtSubjectFeature" type="text" 
+						placeholder="Brief summary (32)" maxlength="32" 
+						class="form-control" style="margin-top:8px;margin-bottom:8px" /></td>
+				</tr>
+				<tr>
+					<td colspan="2">Description of request:</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<textarea id="txtDescriptionFeature" cols="40" rows="8" class="form-control"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<input type="button" class="submitButton" id="btnSubmitFeature" value="Submit" />
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<div id="msgSubmitFeature">Feature request has been submitted.</div>
+					</td>
+				</tr>
+	</table>
+		</div>
+	</div>
+	<div class="purpleArea">
+		<div class="largeBoldWhiteText">Help Shape the Future of Producitivty</div>
+	</div>
+	<div class="sectionDescription">Become an Ambassador-64 Beta tester</div>
+	<div class="sectionTitle">Beta tester help guides</div>
+	<div class="centerContent">
+	<div class="guideSection">
+		<div class="guideItem">
+			<div class="guideImage">
+				<img id="imgHowSoftwareGetsTested" />
+			</div>
+			<input type="button" class="submitButton" id="btnLearnMoreHowSoftwareGetsTested" value="Learn More" />
+		</div>
+		<div class="guideItem">
+			<div class="guideImage">
+				<img id="imgWhatIsABetaTester" />
+			</div>
+			<input type="button" class="submitButton" id="btnWhatIsABetaTester" value="Learn More" />
+		</div>
+	</div>
+	<div class="guideSection">
+		<div class="guideItem">
+			<div class="guideImage">
+				<img id="imgBugsAndFeatures" />
+			</div>
+			<input type="button" class="submitButton" id="btnBugsAndFeatures" value="Learn More" />
+		</div>
+		<div class="guideItem">
+			<div class="guidImage">
+				<img id="imgHowToGiveAwesomeFeedback" />
+			</div>
+			<input type="button" class="submitButton" id="btnHowToGiveAwesomeFeedback" value="Learn More" />
+		</div>
+	</div>
+</div>
+<div>&nbsp;</div>
+<div class="decoLine">&nbsp;</div>
+<div>&nbsp;</div>
+<div class="userManualSection">
+	<div class="userManualSectionTitle">User Manual</div>
+	<div class="userManualSectionButtonRow">
+		<div class="userManualSectionButton">
+			<input type="button" class="userManualButton" id="btnPowerPointTools" value="PowerPoint Tools" />
+		</div>
+		<div class="userManualSectionButton">
+			<input type="button" class="userManualButton" id="btnStorylineTools" value="Storyline Tools" />
+		</div>
+	</div>
+	<div class="userManualSectionButtonRow">
+		<div class="userManualSectionButton">
+			<input type="button" class="userManualButton" id="btnClosedCaptions" value="Closed Captions" />
+		</div>
+		<div class="userManualSectionButton">
+			<input type="button" class="userManualButton" id="btnMediaProcessing" value="Media Processing" />
+		</div>
+	</div>
+</div>
+<div class="footer">
+	<div class="footerLogoAndAddress">
+		<img class="footerLogo" />
+		<div class="footerAddressBlock">
+			<div class="footerCompanyName">Ascendant Design and Training, LLC</div>
+			<div class="footerAddress">Laramie, WY, 82070</div>
+			<div class="footerAddress">307-760-0118</div>
+			<div class="footerAddress">www.ascendantdesign.net</div>
+			<div class="footerCopyright">&copy; 2021 Ascendant Design and Training.<br />All rights reserved.</div>
+		</div>
+	</div>
+	<div class="footerVSep">&nbsp;</div>
+	<div class="footerLinks">
+		<div class="footerLink">Home</div>
+		<div class="footerLink">Our Process</div>
+		<div class="footerLink">Portfolio</div>
+		<div class="footerLink">About Us</div>
+	</div>
+	<div class="footerVSep">&nbsp;</div>
+	<div class="footerAdditionalInfo">Ambassador-64</div>
+</div>
 
 <script type="text/javascript">
 var urlDebug = "https://localhost:5001/api/PostRequest";
 var urlProduction = "https://www.ascendantdesign.net/api/PostRequest";
 $(document).ready(function()
 {
+	$("#btnDownloadInstructions").click(function()
+	{
+		$("#modalDownloadInstructions").show();
+	});
+
+	$(".modal").click(function()
+	{
+		//	When clicking anywhere on the modal, hide it.
+		$(".modal").hide();
+	});
+	$(".modal a").click(function(e)
+	{
+		//	Don't hide the modal when clicking on links.
+		e.stopPropagation();
+	});
+	$(".modalClose").click(function()
+	{
+		//	When clicking on the modal close button, hide it.
+		$(".modal").hide();
+	});
+
 	$("#btnSubmitBug").click(function()
 	{
 		var info = {};
@@ -44,6 +285,9 @@ $(document).ready(function()
 			}
 		});
 		$("#btnSubmitBug").prop("disabled", true);
+		$("#btnSubmitBug").addClass("submitButtonDisabled");
+		$("#btnSubmitBug").removeClass("submitButton");
+		$("#msgSubmitBug").show();
 	});
 
 	$("#btnSubmitFeature").click(function()
@@ -72,6 +316,9 @@ $(document).ready(function()
 			}
 		});
 		$("#btnSubmitFeature").prop("disabled", true);
+		$("#btnSubmitFeature").addClass("submitButtonDisabled");
+		$("#btnSubmitFeature").removeClass("submitButton");
+		$("#msgSubmitFeature").show();
 	});
 
 });

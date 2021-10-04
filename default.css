@@ -1,8 +1,17 @@
+
+html
+{
+	margin: 0;
+	padding: 0;
+}
+
 body
 {
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: 400;
 	font-size: 12pt;
-	margin: 24px;
+	margin: auto;
+	padding: 0;
 }
 
 div.context
@@ -23,15 +32,26 @@ div.status, div.usermanual
 	margin-bottom: 12px;
 }
 
-td
+select, input[type=text]
 {
-	vertical-align: top;
+	font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: 400;
+	font-size: 12pt;
+	width: 100%;
+	border: 1px solid #d0d0d0;
+	border-radius: 4px;
+	padding: 4px;
 }
 
-textarea
+input[type=text]
 {
+	width: 259px;
+}
+
+table
+{
+	margin-top: 16px;
 	width: 100%;
-	margin-bottom: 12px;
 }
 
 table.lines
@@ -42,6 +62,241 @@ table.lines
 table.lines tr
 {
 	border-bottom: 1px solid #808080;
+}
+
+td
+{
+	vertical-align: middle;
+	text-align: left;
+}
+
+textarea
+{
+	font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: 400;
+	font-size: 12pt;
+	width: 100%;
+	border: 1px solid #d0d0d0;
+	border-radius: 4px;
+	padding: 4px;
+	margin-bottom: 12px;
+}
+
+.adtLogoFull
+{
+	content: url(images/ADTLogo1.png);
+	height: 80px;
+	width: calc(height);
+}
+
+.ambassadorDescription
+{
+	display: block;
+	text-align: center;
+	margin: 0;
+	padding-top: 8px;
+	padding-bottom: 16px;
+	color: #2F0C66;
+	font-size: 2.5vw;
+	font-weight: 300;
+}
+
+.ambassadorTitle
+{
+	display: block;
+	text-align: center;
+	margin: 0;
+	padding-top: 15px;
+	color: #2540D9;
+	font-size: 5vw;
+	font-weight: 800;
+}
+
+.centerContent
+{
+	text-align: center;
+	padding: 10px;
+}
+
+.closedCaptionsButton
+{
+	border: 0;
+	padding: 0;
+	margin: 0;
+	width: 176px;
+	height: 65px;
+	background-color: white;
+	background-image: url(images/buttonStripClosedCaptions.png);
+	background-position-y: 0px;
+}
+.closedCaptionsButton:hover
+{
+	background-position-y: -65px;
+}
+.closedCaptionsButton:active
+{
+	background-position-y: -130px;
+}
+.closedCaptionsButton:visited
+{
+	background-position-y: -195px;
+}
+
+.companyNameHead
+{
+	font-weight: 600;
+	font-size: 14pt;
+}
+
+/* .containerLogoFull
+{
+	flex: 0;
+} */
+
+.currentStatus, .downloadStatus
+{
+	display: inline-block;
+	width: 300px;
+	text-align: center;
+}
+.currentStatusImage
+{
+	content: url(images/iconCurrentStatus.png);
+	width: 69px;
+	height: calc(width);
+}
+.downloadStatusImage
+{
+	content: url(images/iconDownloadStatus.png);
+	width: 69px;
+	height: calc(width);
+}
+.currentStatusText, .downloadStatusText
+{
+	font-size: 14pt;
+	font-weight: 300;
+	width: 170px;
+	margin: auto;
+}
+.currentStatusTitle, .downloadStatusTitle
+{
+	font-size: 14pt;
+	font-weight: 800;
+	width: 170px;
+	margin: auto;
+}
+
+.decoLine
+{
+	height: 6px;
+	margin: 0;
+	padding: 0;
+	background: rgb(39,164,242);
+	background: linear-gradient(90deg, rgba(39,164,242,1) 31%, rgba(37,64,217,1) 90%);	
+}
+
+.footer
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+	align-content: flex-start;
+	column-gap: 32px;
+	row-gap: 24px;
+	margin: 0;
+	padding: 0;
+	margin: 0;
+	padding: 16px;
+	color: white;
+	background-color: #221746;
+}
+
+.footerCompanyName
+{
+	font-size: 12pt;
+	font-weight: 600;
+	padding-bottom: 12pt;
+}
+
+.footerCopyright
+{
+	font-size: 10pt;
+	padding-top: 12pt;
+}
+
+.footerLink
+{
+	font-size: 12pt;
+}
+
+.footerLogo
+{
+	content: url(images/ADTLogo2.png);
+	width: 67px;
+	height: 55px;
+}
+
+.footerLogoAndAddress
+{
+	display: flex;
+	flex-wrap: nowrap;
+	column-gap: 16px;
+}
+
+.footerVSep
+{
+	border-left: 2px solid white;
+	height: 100px;
+}
+
+.guideImage
+{
+	display: block;
+}
+
+.guideItem
+{
+	text-align: center;
+}
+
+.guideSection
+{
+	display:inline-flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: flex-start;
+	column-gap: 16px;
+	row-gap: 0px;
+	margin: 0;
+	padding: 0;
+	margin: auto;
+	margin-top: 24px;
+	padding: 0;
+}
+
+.header
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: flex-start;
+	column-gap: 32px;
+	row-gap: 0px;
+	margin: 0;
+	padding: 0;
+	margin: 0;
+	padding: 0;
+	height: 120px;
+}
+
+.largeBoldWhiteText
+{
+	color: white;
+	font-size: 18pt;
+	font-weight: 800;
 }
 
 .learnMoreButton
@@ -68,28 +323,331 @@ table.lines tr
 	background-position-y: -96px;
 }
 
-.submitButton
+.mediaProcessingButton
 {
 	border: 0;
 	padding: 0;
 	margin: 0;
+	width: 176px;
+	height: 65px;
+	background-color: white;
+	background-image: url(images/buttonStripMediaProcessing.png);
+	background-position-y: 0px;
+}
+.mediaProcessingButton:hover
+{
+	background-position-y: -65px;
+}
+.mediaProcessingButton:active
+{
+	background-position-y: -130px;
+}
+.mediaProcessingButton:visited
+{
+	background-position-y: -195px;
+}
+
+.menuContainer
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 32px;
+	margin: 0;
+	padding: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.menuHead
+{
+	font-size: 10pt;
+	font-weight: 300;
+}
+
+.menuHead a
+{
+	color: #2F0C66;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.modal
+{
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal a
+{
+	color: #27a4F2;
+}
+
+.modalClose
+{
+	color: #d0d0d0;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.modalClose:hover,
+.modalClose:focus
+{
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.modalContent
+{
+	color: white;
+	background-color: #221746;
+	margin: 0;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	padding: 20px;
+	border: 1px solid #402B85;
+	border-radius: 8px;
+	width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.powerPointToolsButton
+{
+	border: 0;
+	padding: 0;
+	margin: 0;
+	width: 176px;
+	height: 65px;
+	background-color: white;
+	background-image: url(images/buttonStripPowerPointTools.png);
+	background-position-y: 0px;
+}
+.powerPointToolsButton:hover
+{
+	background-position-y: -65px;
+}
+.powerPointToolsButton:active
+{
+	background-position-y: -130px;
+}
+.powerPointToolsButton:visited
+{
+	background-position-y: -195px;
+}
+
+.purpleArea
+{
+	padding: 32px;
+	background-color: #6A1CE6;
+	text-align: center;
+}
+
+.sectionDescription
+{
+	font-size: 16pt;
+	font-weight: 300;
+	color: #2F0C66;
+	text-align: center;
+	display: block;
+	margin: 0;
+	padding-top: 8px;
+	padding-bottom: 16px;
+}
+
+.sectionIcons
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 32px;
+	padding: 0;
+	margin-top: 16px;
+	padding: 0;
+}
+
+.sectionTitle
+{
+	font-size: 18pt;
+	font-weight: 800;
+	color: #2540D9;
+	text-align: center;
+	display: block;
+	margin: 0;
+	padding-top: 8px;
+	padding-bottom: 16px;
+}
+
+.storylineToolsButton
+{
+	border: 0;
+	padding: 0;
+	margin: 0;
+	width: 176px;
+	height: 65px;
+	background-color: white;
+	background-image: url(images/buttonStripStorylineTools.png);
+	background-position-y: 0px;
+}
+.storylineToolsButton:hover
+{
+	background-position-y: -65px;
+}
+.storylineToolsButton:active
+{
+	background-position-y: -130px;
+}
+.storylineToolsButton:visited
+{
+	background-position-y: -195px;
+}
+
+.submitButton
+{
+	color: white;
+	border: 0;
+	padding: 0;
+	padding-bottom: 4px;
+	padding-right: 4px;
+	margin: 0;
 	width: 86px;
-	height: 33px;
+	height: 32px;
 	background-color: white;
 	background-image: url(images/buttonStripSubmit.png);
 	background-position-y: 0px;
 }
 .submitButton:hover
 {
-	background-position-y: -33px;
+	background-position-y: -32px;
 }
 .submitButton:active
 {
-	background-position-y: -66px;
+	background-position-y: -64px;
 }
 .submitButton:visited
 {
-	background-position-y: -99px;
+	background-position-y: -96px;
+}
+
+.submitButtonDisabled
+{
+	color: #d0d0d0;
+	border: 0;
+	padding: 0;
+	padding-bottom: 4px;
+	padding-right: 4px;
+	margin: 0;
+	width: 86px;
+	height: 32px;
+	background-color: white;
+	background-image: url(images/buttonStripSubmit.png);
+	background-position-y: -96px;
+}
+
+.userForm
+{
+	display: inline-block;
+	background-color: white;
+	border: 1px solid #d0d0d0;
+	width: 376px;
+	border-radius: 8px;
+	padding: 24px;
+	box-shadow: 2px 2px 10px gray;
+	margin-left: 8px;
+	margin-right: 8px;
+	margin-bottom: 16px;
+}
+
+.userFormBugImage
+{
+	flex: 0;
+	content: url(images/iconBug.png);
+	width: 68px;
+	height: 68px;
+}
+
+.userFormFeatureImage
+{
+	flex: 0;
+	content: url(images/iconFeature.png);
+	width: 68px;
+	height: 68px;
+}
+
+.userFormHead
+{
+	display: flex;
+	align-items: center;
+	column-gap: 16px;
+}
+
+.userFormTitle
+{
+	flex: 1;
+	font-size: 18pt;
+	font-weight: 800;
+}
+
+.userManualButton
+{
+	color: white;
+	font-size: 12pt;
+	font-weight: 400;
+	border: 0;
+	padding: 0;
+	margin: 0;
+	width: 176px;
+	height: 65px;
+	background-color: white;
+	background-image: url(images/buttonStripUserManual.png);
+	padding-bottom: 2px;
+	padding-right: 2px;
+}
+.userManualButton:hover
+{
+	background-position-y: -65px;
+}
+.userManualButton:active
+{
+	background-position-y: -130px;
+}
+.userManualButton:visited
+{
+	background-position-y: -195px;
+}
+
+.userManualSection
+{
+	text-align: center;
+	margin-bottom: 32px;
+}
+
+.userManualSectionButtonRow
+{
+	display: flex;
+	column-gap: 64px;
+	justify-content: center;
+	padding-bottom: 24px;
+}
+
+.userManualSectionTitle
+{
+	font-size: 24pt;
+	font-weight: 800;
+	color: #2F0C66;
+	padding-top: 24px;
+	padding-bottom: 32px;
 }
 
 #btnDownloadInstructions
@@ -102,6 +660,10 @@ table.lines tr
 	background-color: white;
 	background-image: url(images/buttonstripDownloadInstructions.png);
 	background-position-y: 0px;
+	font-size: 11pt;
+	color: white;
+	padding-top: 0;
+	padding-bottom: 4px;
 }
 #btnDownloadInstructions:hover
 {
@@ -114,4 +676,51 @@ table.lines tr
 #btnDownloadInstructions:visited
 {
 	background-position-y: -144px;
+}
+
+
+#imgBugsAndFeatures,
+#imgHowSoftwareGetsTested,
+#imgHowToGiveAwesomeFeedback,
+#imgWhatIsABetaTester
+{
+	border: 0;
+	width: 172px;
+	height: 190px;
+}
+
+#imgBugsAndFeatures
+{
+	content: url(images/bugsAndFeatures.png);
+}
+
+#imgHowSoftwareGetsTested
+{
+	content: url(images/howSoftwareGetsTested.png);
+}
+
+#imgHowToGiveAwesomeFeedback
+{
+	content: url(images/howToGiveAwesomeFeedback.png);
+}
+
+#imgWhatIsABetaTester
+{
+	content: url(images/whatIsABetaTester.png);
+}
+
+#msgSubmitBug
+{
+	font-size: 10pt;
+	font-weight: 300;
+	color: #2F0C66;
+	display: none;
+}
+
+#msgSubmitFeature
+{
+	font-size: 10pt;
+	font-weight: 300;
+	color: #2F0C66;
+	display: none;
 }
