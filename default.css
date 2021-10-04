@@ -84,9 +84,12 @@ textarea
 
 .adtLogoFull
 {
-	content: url(images/ADTLogo1.png);
+	background-color: white;
+	background: url(images/ADTLogo1.png);
+	background-size: cover;
 	height: 80px;
-	width: calc(height);
+	/* width: calc(height); */
+	width: 80px;
 }
 
 .ambassadorDescription
@@ -161,15 +164,17 @@ textarea
 }
 .currentStatusImage
 {
-	content: url(images/iconCurrentStatus.png);
+	background: url(images/iconCurrentStatus.png);
+	background-size: 100% 100%;
 	width: 69px;
-	height: calc(width);
+	height: 68px;
 }
 .downloadStatusImage
 {
-	content: url(images/iconDownloadStatus.png);
+	background: url(images/iconDownloadStatus.png);
+	background-size: 100% 100%;
 	width: 69px;
-	height: calc(width);
+	height: 68px;
 }
 .currentStatusText, .downloadStatusText
 {
@@ -232,7 +237,8 @@ textarea
 
 .footerLogo
 {
-	content: url(images/ADTLogo2.png);
+	background: url(images/ADTLogo2.png);
+	background-size: 100% 100%;
 	width: 67px;
 	height: 55px;
 }
@@ -572,7 +578,8 @@ textarea
 .userFormBugImage
 {
 	flex: 0;
-	content: url(images/iconBug.png);
+	background: url(images/iconBug.png);
+	background-size: 100% 100%;
 	width: 68px;
 	height: 68px;
 }
@@ -580,7 +587,8 @@ textarea
 .userFormFeatureImage
 {
 	flex: 0;
-	content: url(images/iconFeature.png);
+	background: url(images/iconFeature.png);
+	background-size: 100% 100%;
 	width: 68px;
 	height: 68px;
 }
@@ -691,22 +699,26 @@ textarea
 
 #imgBugsAndFeatures
 {
-	content: url(images/bugsAndFeatures.png);
+	background: url(images/bugsAndFeatures.png);
+	background-size: 100% 100%;
 }
 
 #imgHowSoftwareGetsTested
 {
-	content: url(images/howSoftwareGetsTested.png);
+	background: url(images/howSoftwareGetsTested.png);
+	background-size: 100% 100%;
 }
 
 #imgHowToGiveAwesomeFeedback
 {
-	content: url(images/howToGiveAwesomeFeedback.png);
+	background: url(images/howToGiveAwesomeFeedback.png);
+	background-size: 100% 100%;
 }
 
 #imgWhatIsABetaTester
 {
-	content: url(images/whatIsABetaTester.png);
+	background: url(images/whatIsABetaTester.png);
+	background-size: 100% 100%;
 }
 
 #msgSubmitBug
