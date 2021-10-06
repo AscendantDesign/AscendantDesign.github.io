@@ -32,6 +32,12 @@ div.status, div.usermanual
 	margin-bottom: 12px;
 }
 
+iframe
+{
+	width: 80%;
+	height: 75vh;
+}
+
 select, input[type=text]
 {
 	font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
@@ -113,6 +119,18 @@ textarea
 	color: #2540D9;
 	font-size: 5vw;
 	font-weight: 800;
+}
+
+.bannerTitle
+{
+	color: white;
+	font-size: 18pt;
+	font-weight: 800;
+	text-align: center;
+	margin: 0;
+	padding: 24px;
+	background: rgb(170,18,249);
+	background: linear-gradient(90deg, rgba(170,18,249,1) 9%, rgba(37,64,217,1) 90%);
 }
 
 .centerContent
@@ -232,7 +250,13 @@ textarea
 
 .footerLink
 {
+	color: white;
 	font-size: 12pt;
+}
+.footerLink a
+{
+	color: white;
+	text-decoration: none;
 }
 
 .footerLogo

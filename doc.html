@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="images/adticon24.png" type="image/png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="scripts/jquery-3.4.1.min.js"></script>
+	<link type="text/css" rel="stylesheet" href="default.css" />
+	<title>Ascendant Design and Training</title>
+</head>
+<body>
+
+	<div class="header">
+		<div class="containerLogoFull"><img class="adtLogoFull" src="images/transparent.png" /></div>
+		<div class="companyNameHead">Ascendant Design and Training, LLC</div>
+		<div class="menuContainer">
+			<div class="menuHead"><a href="index.html">Home</a></div>
+			<div class="menuHead"><a href="https://www.ascendantdesign.net/Portfolios" target="_blank">Portfolio</a></div>
+			<div class="menuHead"><a href="https://www.ascendantdesign.net/Index#sectionAbout" target="_blank">About Us</a></div>
+			<div class="menuHead">Our Process</div>
+			<div class="menuHead"><a href="https://www.ascendantdesign.net/Index#sectionContact" target="_blank">Contact</a></div>
+		</div>
+	</div>
+	<div class="ambassadorTitle">Ambassador-64</div>
+	<div class="bannerTitle">Documentation</div>
+
+	<div class="centerContent">
+		<iframe id="documentFrame"></iframe>
+	</div>
+
+	<div class="footer">
+	<div class="footerLogoAndAddress">
+		<img class="footerLogo" src="images/transparent.png" />
+		<div class="footerAddressBlock">
+			<div class="footerCompanyName">Ascendant Design and Training, LLC</div>
+			<div class="footerAddress">Laramie, WY, 82070</div>
+			<div class="footerAddress">307-760-0118</div>
+			<div class="footerAddress">www.ascendantdesign.net</div>
+			<div class="footerCopyright">&copy; 2021 Ascendant Design and Training.<br />All rights reserved.</div>
+		</div>
+	</div>
+	<div class="footerVSep">&nbsp;</div>
+	<div class="footerLinks">
+		<div class="footerLink"><a href="index.html">Home</a></div>
+		<div class="footerLink">Our Process</div>
+		<div class="footerLink"><a href="https://www.ascendantdesign.net/Portfolios" target="_blank">Portfolio</a></div>
+		<div class="footerLink"><a href="https://www.ascendantdesign.net/Index#sectionAbout" target="_blank">About Us</a></div>
+	</div>
+	<div class="footerVSep">&nbsp;</div>
+	<div class="footerAdditionalInfo">Ambassador-64</div>
+</div>
+
+<script type="text/javascript">
+function getParameterByName(name)
+{
+	var regex = null;
+	name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+	regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+		results = regex.exec(location.search);
+	return (results == null ? "" :
+		decodeURIComponent(results[1].replace(/\+/g, " ")));
+}
+$(document).ready(function()
+{
+	var documentName = getParameterByName("documentName");
+	$("#documentFrame").attr("src", `docs/${documentName}.htm`);
+});
+</script>
+</body>
+</html>
